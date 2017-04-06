@@ -14,7 +14,6 @@ alias git=hub
 PATH=$PATH:/home/oscar/.gem/ruby/2.2.0/bin:/home/oscar/.bin
 
 stty -ixon
-alias pip=pip-save
 
 autoload -Uz promptinit
 promptinit
