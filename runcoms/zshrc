@@ -12,7 +12,9 @@ fi
 
 alias git=hub
 PATH=$PATH:/home/oscar/.gem/ruby/2.2.0/bin:/home/oscar/.bin
-# Customize to your needs...
+
+stty -ixon
+
 autoload -Uz promptinit
 promptinit
 prompt cloud ❯
