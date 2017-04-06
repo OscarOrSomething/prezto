@@ -11,7 +11,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 alias git=hub
-PATH=$PATH:/home/oscar/.gem/ruby/2.2.0/bin:/home/oscar/.bin
+PATH=$PATH:/home/oscar/.gem/ruby/2.4.0/bin:/home/oscar/.bin
 
 stty -ixon
 
