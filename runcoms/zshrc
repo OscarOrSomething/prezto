@@ -11,10 +11,16 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 alias git=hub
+
 PATH=$PATH:/home/oscar/.gem/ruby/2.4.0/bin:/home/oscar/.bin
+
+alias t='t --task-dir ~ --list tasks'
 
 stty -ixon
 
 autoload -Uz promptinit
 promptinit
 prompt cloud ❯
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
