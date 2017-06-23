@@ -74,5 +74,5 @@ fi
 [ ! -s ~/.config/mpd/pid ] && mpd
 
 [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
-
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 TMPPREFIX="${TMPDIR%/}/zsh"
