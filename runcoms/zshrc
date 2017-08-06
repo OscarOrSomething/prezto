@@ -14,7 +14,7 @@ alias git=hub
 
 PATH=$PATH:/home/oscar/.gem/ruby/2.4.0/bin:/home/oscar/.bin
 
-alias t='t --task-dir ~ --list tasks'
+alias t='t --task-dir ~/Drive --list tasks'
 
 stty -ixon
 
