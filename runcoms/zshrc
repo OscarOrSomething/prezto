@@ -23,5 +23,7 @@ autoload -Uz promptinit
 promptinit
 prompt cloud "​"
 
+xrdb -merge /home/oscar/.Xresources
+
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
