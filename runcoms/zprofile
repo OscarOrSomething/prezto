@@ -9,9 +9,7 @@
 # Browser
 #
 
-if [[ "$OSTYPE" == darwin* ]]; then
-  export BROWSER='open'
-fi
+export BROWSER='firefox'
 
 #
 # Editors
@@ -44,7 +42,13 @@ typeset -gU cdpath fpath mailpath path
 # Set the list of directories that Zsh searches for programs.
 path=(
   /usr/local/{bin,sbin}
-  $path
+  /home/oscar/.gem/ruby/2.4.0/bin
+	/home/oscar/.bin
+	/home/oscar/.config/itch/bin
+  /home/oscar/.npm-global/bin
+	/home/oscar/.cargo/bin
+  /home/oscar/.rvm/bin
+	$path
 )
 
 #
@@ -71,9 +75,21 @@ if [[ ! -d "$TMPDIR" ]]; then
   mkdir -p -m 700 "$TMPDIR"
 fi
 
+# Run MPD if it's not already running
 [ ! -s ~/.config/mpd/pid ] && mpd
 
-export PATH=~/.npm-global/bin:~/.cargo/bin:$PATH
+# Run X if not running
 [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
+
+# Ruby Version Manager
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# Temp prefix
 TMPPREFIX="${TMPDIR%/}/zsh"
+
+# Github addon
+alias git=hub
+
+# Ctrl+arrow goes back/forward word
+bindkey "5C" forward-word
+bindkey "5D" backward-word

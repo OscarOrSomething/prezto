@@ -10,20 +10,9 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-alias git=hub
-
-PATH=$PATH:/home/oscar/.gem/ruby/2.4.0/bin:/home/oscar/.bin:/home/oscar/.config/itch/bin/
-
 alias t='t --task-dir ~/Drive --list tasks'
 alias ls='ls --group-directories-first --color=auto -N'
 
 stty -ixon
 
-autoload -Uz promptinit
-promptinit
-prompt cloud "​"
-
 xrdb -merge /home/oscar/.Xresources
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
