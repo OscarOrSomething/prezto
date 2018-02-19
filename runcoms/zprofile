@@ -76,10 +76,10 @@ if [[ ! -d "$TMPDIR" ]]; then
 fi
 
 # Run MPD if it's not already running
-[ ! -s ~/.config/mpd/pid ] && mpd
+[ ! -s ~/.config/mpd/pid ] && mpd &> /dev/null
 
 # Run X if not running
-[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
+[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx -- vt1 &> /dev/null
 
 # Ruby Version Manager
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
