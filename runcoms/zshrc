@@ -15,5 +15,6 @@ alias ls='ls --group-directories-first --color=auto -N'
 
 stty -ixon
 
-xrdb -merge /home/oscar/.Xresources
 export TERM='xterm-256color'
+
+(cat ~/.cache/wal/sequences &)
