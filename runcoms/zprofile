@@ -42,12 +42,13 @@ typeset -gU cdpath fpath mailpath path
 # Set the list of directories that Zsh searches for programs.
 path=(
   /usr/local/{bin,sbin}
-  /home/oscar/.gem/ruby/2.4.0/bin
-	/home/oscar/.bin
-	/home/oscar/.config/itch/bin
-  /home/oscar/.npm-global/bin
-	/home/oscar/.cargo/bin
-  /home/oscar/.rvm/bin
+  $HOME/.gem/ruby/2.4.0/bin
+	$HOME/.bin
+	$HOME/.config/itch/bin
+  $HOME/.npm-global/bin
+	$HOME/.cargo/bin
+  $HOME/.rvm/bin
+  $HOME/.config/composer/vendor/bin
 	$path
 )
 
