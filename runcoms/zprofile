@@ -88,9 +88,6 @@ fi
 # Temp prefix
 TMPPREFIX="${TMPDIR%/}/zsh"
 
-# Github addon
-alias git=hub
-
 # Ctrl+arrow goes back/forward word
 bindkey "5C" forward-word
 bindkey "5D" backward-word
