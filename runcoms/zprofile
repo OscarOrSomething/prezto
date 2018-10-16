@@ -91,10 +91,6 @@ TMPPREFIX="${TMPDIR%/}/zsh"
 # Github addon
 alias git=hub
 
-# So work command actually changes directory
-alias work=". work"
-alias open=". work --no-atom"
-
 # Ctrl+arrow goes back/forward word
 bindkey "5C" forward-word
 bindkey "5D" backward-word
