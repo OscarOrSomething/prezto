@@ -5,9 +5,7 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
-# So work command actually changes directory
-alias work=". work"
-alias open=". work --no-atom"
+alias msfconsole="msfconsole -x \"db_connect msf@msf\""
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
