@@ -49,6 +49,7 @@ path=(
 	$HOME/.cargo/bin
   $HOME/.rvm/bin
   $HOME/.config/composer/vendor/bin
+  $HOME/.dotnet/tools
 	$path
 )
 
@@ -91,3 +92,5 @@ TMPPREFIX="${TMPDIR%/}/zsh"
 # Ctrl+arrow goes back/forward word
 bindkey "5C" forward-word
 bindkey "5D" backward-word
+
+export PATH="$HOME/.cargo/bin:$PATH"
